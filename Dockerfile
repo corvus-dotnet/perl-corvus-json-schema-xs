@@ -1,7 +1,7 @@
 # JSON::Schema::Corvus::XS and the Alien::CorvusJsonSchema it needs, as released to CPAN
 # (src-perl/JSON-Schema-Corvus-XS and src-perl/Alien-CorvusJsonSchema in Corvus.JsonSchema): their version is this
 # tag, which Dependabot keeps up to date.
-FROM ghcr.io/corvus-dotnet/corvus-json-schema-perl-xs:0.1.0 AS dist
+FROM ghcr.io/corvus-dotnet/corvus-json-schema-perl-xs:0.1.1 AS dist
 
 FROM perl:5.44.0 AS build
 COPY --from=dist /corvus-json-schema /tmp/dist
